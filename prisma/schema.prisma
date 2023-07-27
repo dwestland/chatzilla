@@ -27,6 +27,7 @@ model Account {
 
   @@unique([provider, providerAccountId])
   @@map("accounts")
+  @@index([userId])
 }
 
 // next-auth
@@ -38,6 +39,7 @@ model Session {
   user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@map("sessions")
+  @@index([userId])
 }
 
 // next-auth
@@ -81,6 +83,7 @@ model Blogs {
   updatedAt DateTime @default(now()) @map(name: "updated_at")
 
   @@map(name: "blogs")
+  @@index([authorId])
 }
 
 enum Role {
