@@ -21,10 +21,23 @@ const {
 } = process.env
 
 // Ensure environment variables are present, or throw an error
+if (!SECRET) throw new Error('Missing SECRET environment variable')
 if (!GITHUB_ID) throw new Error('Missing GITHUB_ID environment variable')
 if (!GITHUB_SECRET)
   throw new Error('Missing GITHUB_SECRET environment variable')
-if (!SECRET) throw new Error('Missing SECRET environment variable')
+if (!GOOGLE_CLIENT_ID)
+  throw new Error('Missing GOOGLE_CLIENT_ID environment variable')
+if (!GOOGLE_CLIENT_SECRET)
+  throw new Error('Missing GOOGLE_CLIENT_SECRET environment variable')
+if (!EMAIL_SERVER_HOST)
+  throw new Error('Missing EMAIL_SERVER_HOST environment variable')
+if (!EMAIL_SERVER_PORT)
+  throw new Error('Missing EMAIL_SERVER_PORT environment variable')
+if (!EMAIL_SERVER_USER)
+  throw new Error('Missing EMAIL_SERVER_USER environment variable')
+if (!EMAIL_SERVER_PASSWORD)
+  throw new Error('Missing EMAIL_SERVER_PASSWORD environment variable') 
+if (!EMAIL_FROM) throw new Error('Missing EMAIL_FROM environment variable')
 
 export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma),
