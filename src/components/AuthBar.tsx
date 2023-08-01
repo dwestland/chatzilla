@@ -1,20 +1,22 @@
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/app/api/auth/[...nextauth]/route'
 import { LoginButton, LogoutButton } from '@/components/AuthButtons'
+import Container from '@/components/Container'
 
 export default async function AuthBar() {
   const session = await getServerSession(authOptions)
 
   return (
-    <main>
+    <Container className="py-0">
       <div className="bg-green-500">
-        {session && <span>Hello {session?.user?.email}</span>}
-        <LoginButton />
-        <LogoutButton />
+        {session && <span>Hello {session?.user?.email}</span>}&nbsp;
+        {!session && <LoginButton />}
+        {session && <LogoutButton />}
         
-        <h2>Server Session</h2>
-        <pre>{JSON.stringify(session)}</pre>
+        {/* <LogoutButton /> */}
+        
+        {/* <pre>{JSON.stringify(session)}</pre> */}
       </div>
-    </main>
+    </Container>
   )
 }
