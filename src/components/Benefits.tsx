@@ -13,8 +13,8 @@ const Benefits = (props) => {
           }`}>
           <div>
             <Image
-              src="/img/karate.jpg"
-              // src={data.image}
+              // src="/img/karate.jpg"
+              src={data.image}
               width="620"
               height="620"
               alt="Benefits"
