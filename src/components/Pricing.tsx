@@ -7,7 +7,7 @@ import Link from "next/link";
 const Pricing  = () => {
   return (
     <Container className="flex w-full flex-col mt-4 bg items-center justify-center text-center">
-      <div>
+      <div id="pricing">
         <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
           Our Pricing
         </div>
@@ -22,7 +22,7 @@ const Pricing  = () => {
       <div className="my-8 text-center">
         <div className="grid max-w-md gap-10 row-gap-5 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-3 xl:max-w-screen-lg sm:mx-auto">
 
-          <div className="flex flex-col justify-between py-8 transition-shadow duration-300 dark:bg-gray-800 border-gray-200 dark:border-gray-700 border-2 rounded-lg shadow-sm sm:items-center hover:shadow">
+          <div className="flex flex-col justify-between py-8 transition-shadow duration-300 dark:bg-gray-800 border-gray-200 dark:border-gray-700 border-2 rounded-lg shadow-sm sm:items-center hover:shadow px-4">
             <div className="text-lg font-semibold">Starter</div>
             <div className="flex items-center justify-center mt-2">
               <div className="mr-1 text-5xl font-bold">$24</div>
@@ -53,18 +53,18 @@ const Pricing  = () => {
               </ul>
             </div>
 
-            <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
+            <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md">         
               Get Started
             </Link>
           </div>
 
-          <div className="flex flex-col justify-between py-8 transition-shadow duration-300 dark:bg-gray-800 border-gray-200 dark:border-gray-700 border-2 rounded-lg shadow-sm sm:items-center hover:shadow">
-            <div className="text-lg font-semibold">Starter</div>
+          <div className="flex flex-col justify-between py-8 transition-shadow duration-300 dark:bg-gray-800 border-gray-200 dark:border-gray-700 border-2 rounded-lg shadow-sm sm:items-center hover:shadow px-4">
+            <div className="text-lg font-semibold">Professional</div>
             <div className="flex items-center justify-center mt-2">
-              <div className="mr-1 text-5xl font-bold">$24</div>
+              <div className="mr-1 text-5xl font-bold">$42</div>
               <div className="self-end">/ mo</div>
             </div>
-            <p className="text-sm mt-2">Paid annually, paid monthly $30 per month</p>
+            <p className="text-sm mt-2">Paid annually, paid monthly $52.50 per month</p>
 
             <div className="p-6">
               <ul className="list-inside">
@@ -89,16 +89,16 @@ const Pricing  = () => {
               </ul>
             </div>
 
-            <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
+            <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md">         
               Get Started
             </Link>
           </div>
 
-          <div className="flex flex-col justify-between py-8 transition-shadow duration-300 dark:bg-gray-800 border-gray-200 dark:border-gray-700 border-2 rounded-lg shadow-sm sm:items-center hover:shadow">
-            <div className="text-lg font-semibold">Starter</div>
+          <div className="flex flex-col justify-between py-8 transition-shadow duration-300 dark:bg-gray-800 border-gray-200 dark:border-gray-700 border-2 rounded-lg shadow-sm sm:items-center hover:shadow px-4">
+            <div className="text-lg font-semibold">Enterprise</div>
             <div className="flex items-center justify-center mt-2">
-              <div className="mr-1 text-5xl font-bold">$24</div>
-              <div className="self-end">/ mo</div>
+              <div className="mr-1 text-5xl font-bold">Call</div>
+              {/* <div className="self-end">/ mo</div> */}
             </div>
             <p className="text-sm mt-2">Paid annually, paid monthly $30 per month</p>
 
@@ -125,7 +125,7 @@ const Pricing  = () => {
               </ul>
             </div>
 
-            <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
+            <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md">         
               Get Started
             </Link>
           </div>

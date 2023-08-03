@@ -13,7 +13,7 @@ import {
 const benefitOne = {
   title: "Highlight your benefits",
   desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
-  image: "/img/karate.jpg",
+  image: "/img/rock-massage.jpg",
   bullets: [
     {
       title: "Understand your customers",

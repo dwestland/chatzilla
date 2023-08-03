@@ -8,14 +8,15 @@ export default async function AuthBar() {
 
   return (
     <Container className="py-0">
-      <div className="bg-green-500">
-        {session && <span>Hello {session?.user?.email}</span>}&nbsp;
-        {!session && <LoginButton />}
-        {session && <LogoutButton />}
-        
-        {/* <LogoutButton /> */}
-        
-        {/* <pre>{JSON.stringify(session)}</pre> */}
+      <div className="flex items-center justify-between border-gray-600 border h-12">
+        <div className="">
+          Session
+        </div>
+        <div className=''>          
+          {session && <span>Hello {session?.user?.email}</span>}&nbsp;
+          {!session && <LoginButton />}
+          {session && <LogoutButton />}
+        </div>
       </div>
     </Container>
   )

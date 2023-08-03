@@ -7,7 +7,6 @@ import SectionTitle from '@/components/SectionTitle'
 import Benefits from '@/components/Benefits'
 import Pricing from '@/components/Pricing'
 import { benefitOne, benefitTwo } from "@/components/data";
-// import { User } from '@/app/user'
 
 export const metadata: Metadata = {
   title: 'Chattastic 2',
@@ -19,7 +18,6 @@ export default async function Home() {
 
   return (
     <>
-
       <Hero />
       <SectionTitle
         pretitle="Nextly Benefits"
@@ -28,12 +26,10 @@ export default async function Home() {
         and indie projects. Its built with Next.js & TailwindCSS. And its
         completely open-source.
       </SectionTitle>
-
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       {/* <Benefits data={benefitOne} /> */}
       <Pricing />
-
       <SectionTitle
         pretitle="Nextly Benefits"
         title=" Why should you use this landing page">
@@ -41,10 +37,6 @@ export default async function Home() {
         and indie projects. Its built with Next.js & TailwindCSS. And its
         completely open-source.
       </SectionTitle>
-
-
-
-
     </>
   )
 }
