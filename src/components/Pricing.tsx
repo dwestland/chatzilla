@@ -28,21 +28,20 @@ const Pricing  = () => {
               <div className="mr-1 text-5xl font-bold">$24</div>
               <div className="self-end">/ mo</div>
             </div>
-            <p className="text-sm mt-2">Paid annually, paid monthly $30 per month</p>
+            <p className="text-sm mt-2">Paid annually, paid monthly $30 per month, $240 Setup fee</p>
 
             <div className="p-6">
               <ul className="list-inside">
                 <li className="mb-4 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                     stroke="#4f46e5" className="mr-3 h-5 w-5 text-primary dark:text-primary-400">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Unlimited
-                  updates
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>1M tokens per month
                 </li>
                 <li className="mb-4 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                     stroke="#4f46e5" className="mr-3 h-5 w-5 text-primary dark:text-primary-400">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Git
-                  repository
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                    1 website
                 </li>
                 <li className="mb-4 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
@@ -64,21 +63,20 @@ const Pricing  = () => {
               <div className="mr-1 text-5xl font-bold">$42</div>
               <div className="self-end">/ mo</div>
             </div>
-            <p className="text-sm mt-2">Paid annually, paid monthly $52.50 per month</p>
+            <p className="text-sm mt-2">Paid annually, paid monthly $52.50 per month, $240 Setup fee</p>
 
             <div className="p-6">
               <ul className="list-inside">
                 <li className="mb-4 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                     stroke="#4f46e5" className="mr-3 h-5 w-5 text-primary dark:text-primary-400">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Unlimited
-                  updates
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>10M tokens per month
                 </li>
                 <li className="mb-4 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                     stroke="#4f46e5" className="mr-3 h-5 w-5 text-primary dark:text-primary-400">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Git
-                  repository
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                    Up to 5 websites
                 </li>
                 <li className="mb-4 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
@@ -131,6 +129,7 @@ const Pricing  = () => {
           </div>
 
         </div>
+        <p className="pt-12">Average chat conversation uses 400 tokens. Additional 500,000 tokens available for $10.</p>
       </div>
 
     </Container>

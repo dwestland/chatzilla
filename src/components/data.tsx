@@ -2,9 +2,9 @@ import {
   FaceSmileIcon,
   ChartBarSquareIcon,
   CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
+  GlobeAltIcon,
+  BanknotesIcon,
+  CurrencyDollarIcon,
 } from "@heroicons/react/24/solid";
 
 // import benefitOneImg from "/img/karate.jpg";
@@ -16,19 +16,19 @@ const benefitOne = {
   image: "/img/rock-massage.jpg",
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
-      icon: <FaceSmileIcon />,
+      title: "Booking Assistant",
+      desc: "Turns website visitors into customers effectively.",
+      icon: <CurrencyDollarIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "Promote your services",
+      desc: "Showcases your services seamlessly to potential customers.",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
-      icon: <CursorArrowRaysIcon />,
+      title: "Smart Conversations",
+      desc: "AI-powered chatbots offering smart, human-like discussions.",
+      icon: <FaceSmileIcon />,
     },
   ],
 };
@@ -39,19 +39,19 @@ const benefitTwo = {
   image: "/img/karate.jpg",
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
+      title: "Powered by AI",
+      desc: "Utilizes GPT Large Language Model for smooth and natural conversation.",
+      icon: <GlobeAltIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
+      title: "Boost Website Engagement",
+      desc: "Transforms passive website visits into active customer.",
+      icon: <BanknotesIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
+      title: "Simple Installation Process",
+      desc: "Effortless integration with your existing website setup.",
+      icon: <CursorArrowRaysIcon />,
     },
   ],
 };
