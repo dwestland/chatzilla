@@ -14,7 +14,6 @@ type BenefitsProps = {
       desc: string;
     }[];
   };
-  imgPos: string;
 };
 
 interface BenefitProps {
@@ -30,7 +29,7 @@ const Benefits = (props: BenefitsProps) => {
       <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
         <div
           className={`flex items-center justify-center w-full lg:w-1/2 ${
-            props.imgPos === "right" ? "lg:order-1" : ""
+            data.imgPos === "right" ? "lg:order-1" : ""
           }`}>
           <div>
             <Image

@@ -27,7 +27,7 @@ export default async function Home() {
         completely open-source.
       </SectionTitle>
       <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
+      <Benefits data={benefitTwo} />
       {/* <Benefits data={benefitOne} /> */}
       <Pricing />
       <SectionTitle

@@ -14,6 +14,7 @@ const benefitOne = {
   title: "Highlight your benefits",
   desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
   image: "/img/rock-massage.jpg",
+  imgPos: "left",
   bullets: [
     {
       title: "Booking Assistant",
@@ -37,6 +38,7 @@ const benefitTwo = {
   title: "Offer more benefits here",
   desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
   image: "/img/karate.jpg",
+  imgPos: "right",
   bullets: [
     {
       title: "Powered by AI",
