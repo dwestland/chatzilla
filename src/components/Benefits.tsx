@@ -2,7 +2,28 @@ import Image from "next/image";
 import React from "react";
 import Container from "@/components/Container";
 
-const Benefits = (props) => {
+type BenefitsProps = {
+  data: {
+    image: string;
+    imgPos: string;
+    title: string;
+    desc: string;
+    bullets: {
+      title: string;
+      icon: React.ReactElement;
+      desc: string;
+    }[];
+  };
+  imgPos: string;
+};
+
+interface BenefitProps {
+  title: string;
+  icon: React.ReactElement;
+  children: React.ReactNode;
+}
+
+const Benefits = (props: BenefitsProps) => {
   const { data } = props;
   return (
     <>
@@ -13,14 +34,11 @@ const Benefits = (props) => {
           }`}>
           <div>
             <Image
-              // src="/img/karate.jpg"
               src={data.image}
               width="620"
               height="620"
               alt="Benefits"
               className={"object-cover"}
-              // placeholder="blur"
-              // blurDataURL={data.image.src}
             />
           </div>
         </div>
@@ -54,7 +72,7 @@ const Benefits = (props) => {
   );
 };
 
-function Benefit(props) {
+function Benefit(props: BenefitProps) {
   return (
     <>
       <div className="flex items-start mt-8 space-x-3">
