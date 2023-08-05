@@ -11,8 +11,8 @@ import {
 // import benefitTwoImg from "/img/karate.jpg";;
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "Chattastic: Your Website's Wingman",
+  desc: "Boost your website's charisma with Chattastic. This smart bot not only knows your business inside-out but turns casual visitors into loyal customers, all in real-time.",
   image: "/img/rock-massage.jpg",
   imgPos: "left",
   bullets: [
@@ -22,7 +22,7 @@ const benefitOne = {
       icon: <CurrencyDollarIcon />,
     },
     {
-      title: "Promote your services",
+      title: "Promotes your services",
       desc: "Showcases your services seamlessly to potential customers.",
       icon: <ChartBarSquareIcon />,
     },
@@ -35,8 +35,8 @@ const benefitOne = {
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  title: "AI-Powered Conversations",
+  desc: "Chattastic isn't just any bot. With GPT-driven chat, every interaction feels human, guiding users from query to appointment effortlessly.",
   image: "/img/karate.jpg",
   imgPos: "right",
   bullets: [

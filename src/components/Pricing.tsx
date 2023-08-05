@@ -9,13 +9,13 @@ const Pricing  = () => {
     <Container className="flex w-full flex-col mt-4 bg items-center justify-center text-center">
       <div id="pricing">
         <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
-          Our Pricing
+          Transparent Pricing
         </div>
         <h2 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
-          Transparent pricing. Pay as you grow.
+        Plans that scale with your website
         </h2>
         <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.
+          Your customers expect you to deliver faster, more personalized, and smarter experiences.
         </p>
       </div>
 
@@ -46,8 +46,8 @@ const Pricing  = () => {
                 <li className="mb-4 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                     stroke="#4f46e5" className="mr-3 h-5 w-5 text-primary dark:text-primary-400">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>npm
-                  installation
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                  Custom reporting
                 </li>
               </ul>
             </div>
@@ -81,8 +81,14 @@ const Pricing  = () => {
                 <li className="mb-4 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                     stroke="#4f46e5" className="mr-3 h-5 w-5 text-primary dark:text-primary-400">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>npm
-                  installation
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                  Custom reporting
+                </li>
+                <li className="mb-4 flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                    stroke="#4f46e5" className="mr-3 h-5 w-5 text-primary dark:text-primary-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                  No watermark
                 </li>
               </ul>
             </div>
@@ -96,29 +102,27 @@ const Pricing  = () => {
             <div className="text-lg font-semibold">Enterprise</div>
             <div className="flex items-center justify-center mt-2">
               <div className="mr-1 text-5xl font-bold">Call</div>
-              {/* <div className="self-end">/ mo</div> */}
             </div>
-            <p className="text-sm mt-2">Paid annually, paid monthly $30 per month</p>
+            <p className="text-sm mt-2">Custom solutions to fit your business needs</p>
 
             <div className="p-6">
               <ul className="list-inside">
                 <li className="mb-4 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                     stroke="#4f46e5" className="mr-3 h-5 w-5 text-primary dark:text-primary-400">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Unlimited
-                  updates
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                  Professional Services
                 </li>
                 <li className="mb-4 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                     stroke="#4f46e5" className="mr-3 h-5 w-5 text-primary dark:text-primary-400">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Git
-                  repository
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+                    Up to 20 website
                 </li>
                 <li className="mb-4 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
                     stroke="#4f46e5" className="mr-3 h-5 w-5 text-primary dark:text-primary-400">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>npm
-                  installation
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Advanced reporting
                 </li>
               </ul>
             </div>

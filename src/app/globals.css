@@ -17,6 +17,12 @@
   }
 }
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 /* div {
   border: 1px solid pink;
 } */
