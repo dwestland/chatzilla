@@ -8,12 +8,12 @@ export default async function AuthBar() {
 
   return (
     <Container className="py-0">
-      <div className="flex items-center justify-between border-gray-600 border h-12">
+      <div className="flex items-center justify-between border-gray-600 border h-8">
         <div className="">
           Session
         </div>
-        <div className=''>          
-          {session && <span>Hello {session?.user?.email}</span>}&nbsp;
+        <div className='text-sm'>          
+          {session && <span>Hello {session?.user?.email}&nbsp;&nbsp;-&nbsp;&nbsp;</span>}
           {!session && <LoginButton />}
           {session && <LogoutButton />}
         </div>
