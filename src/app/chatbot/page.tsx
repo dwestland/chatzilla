@@ -1,4 +1,4 @@
-import Chat from "./chat";
+import Chat from './chat'
 
 // export const runtime = 'edge'
 
@@ -8,5 +8,5 @@ export default function Home() {
       <h1 className="text-center my-8 text-2xl">DonGPT</h1>
       <Chat />
     </main>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image'
 import Container from '@/components/Container'
 
 const Hero = () => {
@@ -11,7 +11,10 @@ const Hero = () => {
               AI Chatbot for your Health, Fitness, and Beauty Website
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Once annoying and useless, the new Chattastic AI powered chatbots now converse naturally and intelligently to provide users a smooth, enjoyable experience. Assists booking appointments and promoting your services.
+              Once annoying and useless, the new Chattastic AI powered chatbots
+              now converse naturally and intelligently to provide users a
+              smooth, enjoyable experience. Assists booking appointments and
+              promoting your services.
             </p>
           </div>
         </div>
@@ -21,7 +24,7 @@ const Hero = () => {
               src="/img/hero.jpg"
               width={616}
               height={617}
-              className={"object-cover"}
+              className={'object-cover'}
               alt="Hero Photo"
               loading="eager"
             />
@@ -29,7 +32,7 @@ const Hero = () => {
         </div>
       </Container>
     </>
-  );
+  )
 }
 
-export default Hero;
+export default Hero

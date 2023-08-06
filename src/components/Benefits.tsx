@@ -1,51 +1,53 @@
-import Image from "next/image";
-import React from "react";
-import Container from "@/components/Container";
+import Image from 'next/image'
+import React from 'react'
+import Container from '@/components/Container'
 
 type BenefitsProps = {
   data: {
-    image: string;
-    imgPos: string;
-    title: string;
-    desc: string;
+    image: string
+    imgPos: string
+    title: string
+    desc: string
     bullets: {
-      title: string;
-      icon: React.ReactElement;
-      desc: string;
-    }[];
-  };
-};
+      title: string
+      icon: React.ReactElement
+      desc: string
+    }[]
+  }
+}
 
 interface BenefitProps {
-  title: string;
-  icon: React.ReactElement;
-  children: React.ReactNode;
+  title: string
+  icon: React.ReactElement
+  children: React.ReactNode
 }
 
 const Benefits = (props: BenefitsProps) => {
-  const { data } = props;
+  const { data } = props
   return (
     <>
       <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
         <div
           className={`flex items-center justify-center w-full lg:w-1/2 ${
-            data.imgPos === "right" ? "lg:order-1" : ""
-          }`}>
+            data.imgPos === 'right' ? 'lg:order-1' : ''
+          }`}
+        >
           <div>
             <Image
               src={data.image}
               width="620"
               height="620"
               alt="Benefits"
-              className={"object-cover"}
+              className={'object-cover'}
             />
           </div>
         </div>
 
         <div
           className={`flex flex-wrap items-center w-full lg:w-1/2 ${
-            data.imgPos === "right" ? "lg:justify-end" : ""
-          }`}>
+            data.imgPos === 'right' ? 'lg:justify-end' : ''
+          }`}
+        >
           <div>
             <div className="flex flex-col w-full mt-4">
               <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
@@ -68,8 +70,8 @@ const Benefits = (props: BenefitsProps) => {
         </div>
       </Container>
     </>
-  );
-};
+  )
+}
 
 function Benefit(props: BenefitProps) {
   return (
@@ -77,7 +79,7 @@ function Benefit(props: BenefitProps) {
       <div className="flex items-start mt-8 space-x-3">
         <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-indigo-500 rounded-md w-11 h-11 ">
           {React.cloneElement(props.icon, {
-            className: "w-7 h-7 text-indigo-50",
+            className: 'w-7 h-7 text-indigo-50',
           })}
         </div>
         <div>
@@ -90,7 +92,7 @@ function Benefit(props: BenefitProps) {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default Benefits;
+export default Benefits

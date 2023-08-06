@@ -1,10 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
 :root {
   --dark-color: hsl(0, 0%, 10%);
-  --light-color:  hsl(0, 0%, 100%);
+  --light-color: hsl(0, 0%, 100%);
 
   color: var(--dark-color);
   background: var(--light-color);

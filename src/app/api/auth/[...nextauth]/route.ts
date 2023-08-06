@@ -36,7 +36,7 @@ if (!EMAIL_SERVER_PORT)
 if (!EMAIL_SERVER_USER)
   throw new Error('Missing EMAIL_SERVER_USER environment variable')
 if (!EMAIL_SERVER_PASSWORD)
-  throw new Error('Missing EMAIL_SERVER_PASSWORD environment variable') 
+  throw new Error('Missing EMAIL_SERVER_PASSWORD environment variable')
 if (!EMAIL_FROM) throw new Error('Missing EMAIL_FROM environment variable')
 
 export const authOptions: NextAuthOptions = {
@@ -74,4 +74,3 @@ export const authOptions: NextAuthOptions = {
 
 const handler = NextAuth(authOptions)
 export { handler as GET, handler as POST }
-

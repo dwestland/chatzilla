@@ -10,7 +10,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Chattastic',
-  description: 'Empower your website with AI-driven customer service chat bot for health, fitness, and beauty sites. Boost engagement and promote your services seamlessly.',
+  description:
+    'Empower your website with AI-driven customer service chat bot for health, fitness, and beauty sites. Boost engagement and promote your services seamlessly.',
 }
 
 export default function RootLayout({
@@ -24,7 +25,7 @@ export default function RootLayout({
         <Navbar />
         <AuthBar />
         {/* <Container> */}
-          {children}
+        {children}
         {/* </Container> */}
         <Footer />
       </body>
