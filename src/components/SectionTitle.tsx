@@ -1,12 +1,13 @@
-import React from "react";
-import Container from "@/components/Container";
+import React from 'react'
+import Container from '@/components/Container'
 
 const SectionTitle = (props: any) => {
   return (
     <Container
       className={`flex w-full flex-col mt-4 bg ${
-        props.align === "left" ? "" : "items-center justify-center text-center"
-      }`}>
+        props.align === 'left' ? '' : 'items-center justify-center text-center'
+      }`}
+    >
       {props.pretitle && (
         <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
           {props.pretitle}
@@ -25,7 +26,7 @@ const SectionTitle = (props: any) => {
         </p>
       )}
     </Container>
-  );
+  )
 }
 
-export default SectionTitle;
+export default SectionTitle
