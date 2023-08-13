@@ -18,7 +18,7 @@ export default async function Home() {
   const session = await getServerSession(authOptions)
 
   return (
-    <>
+    <main>
       <Hero />
       <SectionTitle
         pretitle="Chattastic Benefits"
@@ -40,6 +40,6 @@ export default async function Home() {
         minutes. To install the chatbot on your website, you just add a single
         line of code.
       </SectionTitle>
-    </>
+    </main>
   )
 }
