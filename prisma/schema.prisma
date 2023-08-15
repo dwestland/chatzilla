@@ -81,6 +81,7 @@ model Demo {
   email           String?
   phone           String?
   address         String? @db.Text
+  zip             String?
   websiteUrl      String? @map(name: "website_url")
   businessHours   String? @db.Text @map(name: "business_hours")
   bookingLink     String? @map(name: "booking_link")

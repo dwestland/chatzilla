@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="rounded-lg overflow-hidden">
+          <div className="overflow-hidden rounded-lg">
             <Image
               src="/img/hero.jpg"
               width={616}
