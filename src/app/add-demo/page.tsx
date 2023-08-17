@@ -1,17 +1,22 @@
 import React from 'react'
 import { prisma } from '@/lib/prisma'
 import Container from '@/components/Container'
+import { revalidatePath } from 'next/cache'
 
 async function addDemo() {
-  const addDemoUser = async (formData: FormData) => {
+  async function addDemoUser(formData: FormData) {
     'use server'
 
-    const content = formData.get('content')
-    prisma.demo.create({
+    await prisma.demo.create({
       data: {
-        content: content as string,
+        businessName: formData.get('businessName') as string,
+        managerName: formData.get('managerName') as string,
+        phone: formData.get('phone') as string,
+        zip: formData.get('zip') as string,
       },
     })
+
+    revalidatePath('/add-demo')
   }
 
   return (
@@ -31,7 +36,8 @@ async function addDemo() {
             <input
               type="text"
               name="businessName"
-              id="businessName"
+              // id="businessName"
+
               className="w-full p-2 mt-1 transition border-2 border-gray-300 rounded-md dark:bg-gray-700 focus:outline-none focus:border-indigo-500"
             />
           </div>
@@ -45,7 +51,7 @@ async function addDemo() {
             <input
               type="text"
               name="managerName"
-              id="managerName"
+              // id="managerName"
               className="w-full p-2 mt-1 transition border-2 border-gray-300 rounded-md dark:bg-gray-700 focus:outline-none focus:border-indigo-500"
             />
           </div>
@@ -59,7 +65,7 @@ async function addDemo() {
             <input
               type="text"
               name="phone"
-              id="phone"
+              // id="phone"
               className="w-full p-2 mt-1 transition border-2 border-gray-300 rounded-md dark:bg-gray-700 focus:outline-none focus:border-indigo-500"
             />
           </div>
@@ -73,7 +79,7 @@ async function addDemo() {
             <input
               type="text"
               name="zip"
-              id="zip"
+              // id="zip"
               className="w-full p-2 mt-1 transition border-2 border-gray-300 rounded-md dark:bg-gray-700 focus:outline-none focus:border-indigo-500"
             />
           </div>
