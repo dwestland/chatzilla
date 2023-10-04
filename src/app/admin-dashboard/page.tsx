@@ -1,3 +1,4 @@
+// 'use client'
 import React from 'react'
 import { prisma } from '@/lib/prisma'
 // import { Container } from 'postcss'
@@ -6,6 +7,9 @@ import Link from 'next/link'
 
 async function adminDashboard() {
   const businesses = await prisma.demo.findMany()
+  // const handleClick = () => {
+  //   console.log('clicked')
+  // }
 
   return (
     <Container>
@@ -34,13 +38,20 @@ async function adminDashboard() {
           </thead>
           <tbody className="divide-y divide-gray-200">
             {businesses.map((business) => (
-              <tr key={business.id}>
+              <tr
+                key={business.id}
+                className=" hover:text-indigo-500"
+                // onClick={handleClick}
+              >
                 <td className="px-6 py-4 whitespace-no-wrap">
-                  {business.businessName}
+                  <Link href={`/demo/${business.id}`}>
+                    {business.businessName}
+                  </Link>
                 </td>
                 <td className="px-6 py-4 whitespace-no-wrap">
                   {business.managerName}
                 </td>
+
                 <td className="px-6 py-4 whitespace-no-wrap">
                   {business.phone}
                 </td>

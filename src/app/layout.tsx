@@ -22,12 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* <body className={`${inter.className} container m-auto`}> */}
         <Navbar />
         <AuthBar />
-        {/* <Container> */}
         {children}
-        {/* </Container> */}
+        {/* <div className="fixed bottom-0 m-auto border border-green-400"> */}
         <Footer />
+        {/* </div> */}
       </body>
     </html>
   )
